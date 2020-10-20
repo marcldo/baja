@@ -1,0 +1,60 @@
+body {
+  background-color: #FCFCFC;
+  color:#E53A31;
+}
+
+.logo {
+  fill: #E53A31;
+}
+
+.brand-logo {
+  color: #E53A31;
+}
+
+.title {
+  font-size: 2em;
+  color: black;
+}
+
+.description {
+  color: black;
+}
+
+hr {
+  margin: 0px;
+  margin-bottom: 1em;
+  border: 1px solid  #E53A31;
+  max-width: 75px
+}
+
+.main-footer{
+  background-color: inherit;
+}
+
+
+.our-story-main-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.our-story-main-section .about-image{
+  width: 30vw;
+  margin-left: 2rem;
+  height: auto;
+  max-width: 350px;
+}
+
+@media (max-width: 800px) {
+  .our-story-main-section {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .our-story-main-section .about-image{
+    width: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    height: 30vh;
+  }
+}
