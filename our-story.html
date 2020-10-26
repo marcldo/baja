@@ -6,6 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="our-story.css">
+
+  <!-- Glider Stylesheet -->
+  <link rel="stylesheet" href="glider.min.css">
+  <link rel="stylesheet" href="glider-custom.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
   <title>Baja Chips.Co - Our Story</title>
 </head>
 
@@ -52,7 +59,25 @@
         </span>
         <a href="our-story.html" class="btn">Sign Up</a>
       </div>
-      <img src="images/about1.jpeg" alt="" class="about-image">
+
+      <div class="glider-contain multiple about-image">
+
+        <div class="glider">
+          <figure>
+            <img src="images/about1.jpeg" alt="">
+          </figure>
+          <figure>
+            <img src="images/about2.jpeg" alt="">
+          </figure>
+        </div>
+        <button class="glider-prev">
+          <i class="fa fa-chevron-left"></i>
+        </button>
+        <button class="glider-next">
+          <i class="fa fa-chevron-right"></i>
+        </button>
+      </div>
+
     </section>
   </div>
   <footer class="main-footer">
@@ -102,6 +127,19 @@
       </nav>
     </div>
   </footer>
+
+  <script src="glider.min.js"></script>
+
+  <script>
+    new Glider(document.querySelector('.glider'), {
+      slidesToShow: 1.5,
+      draggable: true,
+      arrows: {
+        prev: '.glider-prev',
+        next: '.glider-next'
+      }
+    })
+  </script>
 </body>
 
 </html>
